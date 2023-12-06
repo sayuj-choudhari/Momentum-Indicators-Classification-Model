@@ -11,6 +11,6 @@ Below is a 5 year back test of the model, showing the portfolio value over time 
 
 ![plot](./5_year_backtest.png)
 
-This project is still in the works, I am looking to implement more accurate analysis based on options-pricing data pulled from the internet as well as additional features to the model such as selling/ executing the option on the last day if optimal or checking if selling the option will lead to better gains than execution. Another option is to check the options chain and find the highest expected value outcome, not necessarily at-the-money, calculated by $EV = p(gain) * (.1 - premium) - (1 - p(gain)) * (premium) = Y$ where $premium$ is the percentage value of the premium relative to the strike. 
+This project is still in the works, I am looking to implement more accurate analysis based on options-pricing calculated from pricing data as well as additional features to the model such as selling/ executing the option on the last day if optimal or checking if at any point selling the option will lead to better gains than execution. Another option is to check the options chain and find the highest expected value outcome, not necessarily at-the-money, calculated by $EV = p(gain) * (.1 - calculated premium) - (1 - p(gain)) * (calculated premium) = Y$ where $calculated premium$ is the percentage value of the premium relative to the strike that we calculate using a specific strike price, expiry, spot price, and estimated volatility based off of previous price movements. 
 
 
